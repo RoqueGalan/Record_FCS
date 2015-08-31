@@ -30,7 +30,7 @@
             @Html.DisplayNameFor(model => model.Status)
         </th>
         <th>
-            @Html.NoEncodeActionLink("<span class='fa fa-plus'></span>", "Agregar Tipo de Atributo para " + nombre, "Crear", "Atributo", new { id = id }, htmlAttributes: new { data_modal = "", data_toggle = "tooltip", @class = "btn btn-success btn-xs openModal_atributo" })
+            @Html.NoEncodeActionLink("<span class='fa fa-plus'></span>", "Agregar Tipo de Atributo para " + nombre, "Crear", "Atributo", new { id = id }, htmlAttributes: new { data_modal = "", data_toggle = "tooltip", @class = "btn btn-default btn-xs openModal_atributo" })
         </th>
     </tr>
 
@@ -76,7 +76,7 @@
             <td>
 
                 @Html.NoEncodeActionLink("<span class='fa fa-pencil'></span>", "Editar " + nombreAtt, "Editar", "Atributo", routeValues: new { id = item.AtributoID }, htmlAttributes: new { data_modal = "", data_toggle = "tooltip", @class = "btn btn-default btn-xs openModal_atributo" })
-                @Html.NoEncodeActionLink("<span class='fa fa-trash'></span>", "Eliminar " + nombreAtt + "del tipo de pieza", "Eliminar", "Atributo", routeValues: new { id = item.AtributoID }, htmlAttributes: new { data_modal = "", data_toggle = "tooltip", @class = "btn btn-danger btn-xs openModal_atributo" })
+                @Html.NoEncodeActionLink("<span class='fa fa-trash'></span>", "Eliminar " + nombreAtt + "del tipo de pieza", "Eliminar", "Atributo", routeValues: new { id = item.AtributoID }, htmlAttributes: new { data_modal = "", data_toggle = "tooltip", @class = "btn btn-primary btn-xs openModal_atributo" })
 
 
             </td>
